@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div id="header">
+
+    <div class="container">
+        <nav>
+            <img src="images/logo.png"class="logo">
+            <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-txt">
+                <p>Web Developer </p>
+                <h1>Hi i'm <span>Denit</span> <br> Binny From India  </h1>
+
+
+        </div>
+    </div>
+   </div>
+   
+   <div id="about">
+   <div class="container">
+<div class="row">
+    <div class="about-col-1">
+        <img src="images/img1.jpg"class="img">
+    </div>
+    <div class="about-col-2">
+    <h1 class="subtitle"> About Me </h1>
+    <p>Experienced Full Stack Web Developer with expertise 
+        in designing and developing responsive, user-friendly
+         web applications. Proficient in HTML, CSS, JavaScript,
+          Node.js, React, and SQL/NoSQL databases,
+          I excel at crafting seamless solutions that bridge 
+          the gap between front-end and back-end development.
+
+        With a strong focus on performance, scalability, and functionality,
+         I specialize in building intuitive user interfaces, 
+        developing robust APIs, and managing server-side operations.
+         Whether it’s creating dynamic single-page applications
+         or integrating complex database systems, 
+         I aim to deliver impactful digital experiences tailored to diverse needs.
+        </p>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('eductaion') ">Education</p>
+            <p class="tab-links"onclick="opentab('experience')>Experience</p>
+       </div>
+       <div class="tab-contents active-tab" id="skills">
+        <ul>
+
+            <li><span>Web Development</span><br>Full Stack Web development</li>
+            <li><span>Designing</span><br>Website/application interface designing</li>
+            <li><span>Ml</span><br>Machine learning</li>
+
+
+
+        </ul>
+
+        <div class="tab-contents" id="education">
+            <ul>
+    
+                <li><span>Bachelor's degree </span><br>Amal Jyothi College Of Enginnering(Autonomus)<br>(2022-present)</li>
+                <li><span>Higher Secondary Course </span><br>Little Flower Public School (CBSE) <br>2020-2026</li>
+                <li><span>High School </span><br> CBSE <br> 2008-2019</li>
+    
+    
+    
+            </ul>
+            <div class="tab-contents" id="experience">
+                <ul>
+        
+                    <li><span>ML Intern (6 months)</span><br>Based on neural responses and muscular motions <br> EMG signal classifications</li>
+                    <li><span>On development</span><br>Fully Automated Honey Extractor</li>
+          </ul>
+        
+
+
+       </div>
+</div>
+   </div>
+   </div>
+<script>
+
+var tablinks=document.getElementsByClassName("tab-links");
+var tablinks.getElementsByClassName("tab-contents");
+function opentab(tabname)
+{
+  for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+  }
+
+
+
+}
+</script>
+
+
+</body>
+</html>
